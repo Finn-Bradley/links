@@ -1,14 +1,88 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
+    <style>
+      * {
+       border: thin red solid;
+      }
+
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #fef6e4;
+        display: flex;
+        justify-content: center;
+        }
+
+      .banner-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover
+        border-radius: 128px;
+        }
+
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+
+      .name {
+        color: #f582ae;
+        display: flex;
+        justify-content: center;
+      }
+
+      .banner {
+        display: flex;
+        justify-content: center;
+      }
+
+      .social-icons {
+        display: flex;
+       justify-content: space-around;
+
+      .social-icons a {
+        color: #8bd3dd;
+        text-decoration: none;
+      }
+
+      .link {
+        background-color: #f3d2c1;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+      }
+
+      .link a {
+       color: #001858;
+       text-decoration: none;
+       text-align: center;
+       flex-grow: 1;
+      }
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
+        flex-grow: 1;
+        }
+
+    </style>
+
     <title>Finn</title>
     <meta charset="utf-8">
     <meta name="author" content="Finn"
   </head>
 
   <body>
+
+    <div class="items">
     <div class="banner">
-      <img src="/thumbnails/Leaf.gif" alt="animation of a leaf that is moving back and forth">
+      <img src="/thumbnails/Leaf.gif" alt="animation of a leaf that is moving back and forth" class="banner-image">
     </div>
     
     <div class="name">
@@ -32,13 +106,13 @@
 
     <div class="link">
       <img
-        src="/thumbnails/dd-findingtherapist-b2c3c927.png">
+        src="/thumbnails/dd-findingtherapist-b2c3c927.png" class="thumbnail">
 
       <a target="_blank" href="https://therapyaccessproject.org/guide-to-finding-a-therapist">Guide to finding a therapist</a>
     </div>
 
     <div class="link">
-      <img src="/thumbnails/john-schnobrich-2FPjlAyMQTA-unsplash.jpg">
+      <img src="/thumbnails/john-schnobrich-2FPjlAyMQTA-unsplash.jpg" class="thumbnail">
 
       <a target="_blank"
         href="https://therapyaccessproject.org/become-a-volunteer">Become a volunteer</a>
@@ -46,9 +120,10 @@
 
     <div class="link">
       <img
-        src="/thumbnails/katt-yukawa-K0E6E0a0R3A-unsplash.jpg">
+        src="/thumbnails/katt-yukawa-K0E6E0a0R3A-unsplash.jpg" class="thumbnail">
 
       <a target="_blank" href="https://therapyaccessproject.org/donate">Donate</a>
     </div>
   </body>
 </html>
+</div>
